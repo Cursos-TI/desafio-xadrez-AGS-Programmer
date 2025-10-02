@@ -2,7 +2,7 @@
 
 int main () {
 
-    int bispo = 1, torre, rainha = 1;
+    int bispo = 1, torre, rainha = 1, cavalo = 1;
 
     //Mover a torre 5 casas para a direita:
     printf("## Torre ##\n"); //Peça que irá se mover.
@@ -27,6 +27,17 @@ int main () {
         printf("Cima, Direita\n"); //Imprime a direção do movimento da peça.
         bispo++;
     } while (bispo <= 5);
+
+    printf("\n");
+
+    //Mover o cavalo 2 casas para baixo e 1 para esquerda:
+    printf("## Cavalo ##\n"); //Peça que irá se mover.
+    while(cavalo--) { //Loop Externo
+        for(int i = 0; i < 2; i++) {; //Loop Interno
+        printf("Baixo\n"); //Imprime "Baixo" duas vezes.
+        }
+        printf("Esquerda\n"); //Imprime "Esquerda" uma vez.
+    }
 
     return 0;
 }
